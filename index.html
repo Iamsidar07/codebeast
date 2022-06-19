@@ -1,0 +1,813 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>CodeBeast-Manoj kumar blog
+        </title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="Free Website Template" name="keywords">
+        <meta content="Free Website Template" name="description">
+
+        <!-- Favicon -->
+        <link href="data:image/png;base64,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" rel="icon">
+
+        <!-- Google Font -->
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+        <!-- CSS Libraries -->
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+        <link href="lib/animate/animate.min.css" rel="stylesheet">
+        <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+        <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+        <!-- Template Stylesheet -->
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+
+    <body data-spy="scroll" data-target=".navbar" data-offset="51">
+        <!-- Nav Bar Start -->
+        <div class="navbar navbar-expand-lg bg-light navbar-light">
+            <div class="container-fluid">
+                <a href="index.html" class="navbar-brand">CodeBeast</a>
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                    <div class="navbar-nav ml-auto">
+                        <a href="#home" class="nav-item nav-link active">Home</a>
+                        <a href="#about" class="nav-item nav-link">About</a>
+                        <a href="#service" class="nav-item nav-link">Service</a>
+                        <!-- <a href="#experience" class="nav-item nav-link">Experience</a> -->
+                        <a href="#portfolio" class="nav-item nav-link">Portfolio</a>
+                        <!-- <a href="#price" class="nav-item nav-link">Price</a> -->
+                        <!-- <a href="#review" class="nav-item nav-link">Review</a> -->
+                        <!-- <a href="#team" class="nav-item nav-link">Team</a> -->
+                        <!-- <a href="#blog" class="nav-item nav-link">Blog</a> -->
+                        <a href="#contact" class="nav-item nav-link">Contact</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Nav Bar End -->
+
+
+        <!-- Hero Start -->
+        <div class="hero" id="home">
+            <div class="container-fluid">
+                <div class="row align-items-center">
+                    <div class="col-sm-12 col-md-6">
+                        <div class="hero-content">
+                            <div class="hero-text">
+                                <p>I'm</p>
+                                <h1>Manoj</h1>
+                                <h2></h2>
+                                <div class="typed-text">Web Designer, Web Developer, Front End Developer, Apps Designer, Apps Developer</div>
+                            </div>
+                            <div class="hero-btn">
+                                <!-- <a class="btn" href="">Hire Me</a> -->
+                                <a class="btn" href="#contact">Contact Me</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 d-none d-md-block">
+                        <div class="hero-image">
+                            <img src="img/hero.png" alt="Hero Image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Hero End -->
+
+
+        <!-- About Start -->
+        <div class="about wow fadeInUp" data-wow-delay="0.1s" id="about">
+            <div class="container-fluid">
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <div class="about-img">
+                            <img src="img/about.png" alt="Image">
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="about-content">
+                            <div class="section-header text-left">
+                                <p>Learn About Me</p>
+                                <h2>1 Years Experience</h2>
+                            </div>
+                            <div class="about-text">
+                                <p>
+                                    Coding can improve a human’s abilities such as cognitive thinking, creativity, and problem-solving. In the near future, every single sector will utilize some sort of software programming. What are the interesting facts about computer programming?
+                                </p>
+                            </div>
+                            <div class="skills">
+                                <div class="skill-name">
+                                    <p>Web Design</p><p>80%</p>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                                <div class="skill-name">
+                                    <p>Web Development</p><p>85%</p>
+                                </div>
+                                <!-- <div class="progress">
+                                    <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div> -->
+                                <!-- <div class="skill-name">
+                                    <p>Apps Design</p><p>90%</p>
+                                </div> -->
+                                <!-- <div class="progress">
+                                    <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div> -->
+                                <!-- <div class="skill-name">
+                                    <p>Apps Development</p><p>85%</p>
+                                </div> -->
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                            <a class="btn" href="">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- About End -->
+        
+        
+        <!-- Service Start -->
+        <div class="service" id="service">
+            <div class="container">
+                <div class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
+                    <p>What I do</p>
+                    <h2>Awesome Quality Services</h2>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.0s">
+                        <div class="service-item">
+                            <div class="service-icon">
+                                <i class="fa fa-laptop"></i>
+                            </div>
+                            <div class="service-text">
+                                <h3>Web Design</h3>
+                                <p>
+                                    I love to doing web design as my hobbie.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.2s">
+                        <div class="service-item">
+                            <div class="service-icon">
+                                <i class="fa fa-laptop-code"></i>
+                            </div>
+                            <div class="service-text">
+                                <h3>Web Development</h3>
+                                <p>
+                                    I love to doing web Development as my hobbie.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.4s">
+                        <div class="service-item">
+                            <div class="service-icon">
+                                <i class="fab fa-android"></i>
+                            </div>
+                            <div class="service-text">
+                                <h3>Apps Design</h3>
+                                <p>
+                                    Lorem ipsum dolor sit amet elit. Phase nec preti mi. Curabi facilis ornare velit non
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.6s">
+                        <div class="service-item">
+                            <div class="service-icon">
+                                <i class="fab fa-apple"></i>
+                            </div>
+                            <div class="service-text">
+                                <h3>Apps Development</h3>
+                                <p>
+                                    Lorem ipsum dolor sit amet elit. Phase nec preti mi. Curabi facilis ornare velit non
+                                </p>
+                            </div>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+        <!-- Service End -->
+        
+        
+         <!-- Experience Start -->
+         <div class="experience" id="experience">
+            <div class="container">
+                <header class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
+                    <p>My Resume</p>
+                    <h2>Working Experience</h2>
+                </header>
+                 <div class="timeline">
+                    <!-- <div class="timeline-item left wow slideInLeft" data-wow-delay="0.1s">
+                        <div class="timeline-text">
+                            <div class="timeline-date">2045 - 2050</div>
+                            <h2>Web Developer</h2>
+                            <h4>Soft Agency, San Francisco, CA</h4>
+                            <p>
+                                Lorem ipsum dolor sit amet elit. Aliquam odio dolor, id luctus erat sagittis non. Ut blandit semper pretium.
+                            </p>
+                        </div>
+                    </div> -->
+                    <!-- <div class="timeline-item right wow slideInRight" data-wow-delay="0.1s">
+                        <div class="timeline-text">
+                            <div class="timeline-date">2045 - 2050</div>
+                            <h2>Web Developer</h2>
+                            <h4>Soft Agency, San Francisco, CA</h4>
+                            <p>
+                                Lorem ipsum dolor sit amet elit. Aliquam odio dolor, id luctus erat sagittis non. Ut blandit semper pretium.
+                            </p>
+                        </div>
+                    </div> -->
+                    <!-- <div class="timeline-item left wow slideInLeft" data-wow-delay="0.1s">
+                        <div class="timeline-text">
+                            <div class="timeline-date">2045 - 2050</div>
+                            <h2>Web Developer</h2>
+                            <h4>Soft Agency, San Francisco, CA</h4>
+                            <p>
+                                Lorem ipsum dolor sit amet elit. Aliquam odio dolor, id luctus erat sagittis non. Ut blandit semper pretium.
+                            </p>
+                        </div>
+                    </div> -->
+                    <!-- <div class="timeline-item right wow slideInRight" data-wow-delay="0.1s">
+                        <div class="timeline-text">
+                            <div class="timeline-date">2045 - 2050</div>
+                            <h2>Web Developer</h2>
+                            <h4>Soft Agency, San Francisco, CA</h4>
+                            <p>
+                                Lorem ipsum dolor sit amet elit. Aliquam odio dolor, id luctus erat sagittis non. Ut blandit semper pretium.
+                            </p>
+                        </div>
+                    </div> -->
+                    <!-- <div class="timeline-item left wow slideInLeft" data-wow-delay="0.1s">
+                        <div class="timeline-text">
+                            <div class="timeline-date">2045 - 2050</div>
+                            <h2>Web Developer</h2>
+                            <h4>Soft Agency, San Francisco, CA</h4>
+                            <p>
+                                Lorem ipsum dolor sit amet elit. Aliquam odio dolor, id luctus erat sagittis non. Ut blandit semper pretium.
+                            </p>
+                        </div>
+                    </div> -->
+                    <div class="timeline-item right wow slideInRight" data-wow-delay="0.1s">
+                        <div class="timeline-text">
+                            <div class="timeline-date">2022</div>
+                            <h2>Web Developer</h2>
+                            <h4></h4>
+                            <p>
+                                
+                            </p>
+                        </div>
+                    </div>
+                </div> 
+            </div>
+        </div>
+        <!-- Job Experience End -->
+        
+        
+        <!-- Banner Start -->
+  <div class="banner wow zoomIn" data-wow-delay="0.1s" style="display: none;"> 
+            <div class="container">
+                <div class="section-header text-center">
+                    <p>Reasonable Price</p>
+                    <h2>Get A <span>Special</span> Price</h2>
+                </div>
+                <div class="container banner-text">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id gravida condimentum, viverra quis sem. Curabitur non nisl nec nisi scelerisque maximus. 
+                    </p>
+                    <a class="btn">Pricing Plan</a>
+                </div>
+            </div>
+        </div>
+        <!-- Banner End -->
+
+
+        <!-- Portfolio Start -->
+        <div class="portfolio" id="portfolio">
+            <div class="container">
+                <div class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
+                    <p>My Portfolio</p>
+                    <h2>My Excellent Portfolio</h2>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <ul id="portfolio-filter">
+                            <li data-filter="*" class="filter-active">All</li>
+                            <li data-filter=".filter-1">Web Design</li>
+                            <!-- <li data-filter=".filter-2">Mobile Apps</li>
+                            <li data-filter=".filter-3">Game Dev</li> -->
+                        </ul>
+                    </div>
+                </div>
+                <div class="row portfolio-container">
+                    <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-1 wow fadeInUp" data-wow-delay="0.0s">
+                        <div class="portfolio-wrap">
+                            <div class="portfolio-img">
+                                <img src="img/1.png" alt="Image" >
+                            </div>
+                            <div class="portfolio-text">
+                                <h3>Search movies</h3>
+                                <a class="btn"  href="https://search-movie-app-3a1ca.web.app/"  ><i class="fa fa-eye " aria-hidden="true"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-2 wow fadeInUp" data-wow-delay="0.2s">
+                        <div class="portfolio-wrap">
+                            <div class="portfolio-img">
+                                <img src="img/2.png" alt="Image">
+                            </div>
+                            <div class="portfolio-text">
+                                <h3>Disney Clone</h3>
+                                <a class="btn" href="https://sasta-disney-plus.firebaseapp.com/" ><i class="fa fa-eye " aria-hidden="true"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-3 wow fadeInUp" data-wow-delay="0.4s">
+                        <div class="portfolio-wrap">
+                            <div class="portfolio-img">
+                                <img src="img/3.png" alt="Image">
+                            </div>
+                            <div class="portfolio-text">
+                                <h3>Nakli 🤣 Amazon</h3>
+                                <a class="btn" href="https://fir-9f669.web.app/" ><i class="fa fa-eye " aria-hidden="true"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-1 wow fadeInUp" data-wow-delay="0.6s">
+                        <div class="portfolio-wrap">
+                            <div class="portfolio-img">
+                                <img src="img/4.png" alt="Image">
+                            </div>
+                            <div class="portfolio-text">
+                                <h3>Kid nft app</h3>
+                                <a class="btn" href="https://kid-nft-app.web.app/" ><i class="fa fa-eye " aria-hidden="true"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-2 wow fadeInUp" data-wow-delay="0.8s">
+                        <div class="portfolio-wrap">
+                            <div class="portfolio-img">
+                                <img src="img/5.png" alt="Image">
+                            </div>
+                            <div class="portfolio-text">
+                                <h3>Tesla app</h3>
+                              
+                                <a class="btn" href="https://iamsidar07.github.io/sasta-Tesla/#" ><i class="fa fa-eye " aria-hidden="true"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-3 wow fadeInUp" data-wow-delay="1s">
+                        <div class="portfolio-wrap">
+                            <div class="portfolio-img">
+                                <img src="img/6.png" alt="Image">
+                            </div>
+                            <div class="portfolio-text">
+                                <h3>Netflix app </h3>
+                                <a class="btn" href="https://netflixiamsidar07.web.app/"><i class="fa fa-eye " aria-hidden="true"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-3 wow fadeInUp" data-wow-delay="1s">
+                        <div class="portfolio-wrap">
+                            <div class="portfolio-img">
+                                <img src="img/7.png" alt="Image">
+                            </div>
+                            <div class="portfolio-text">
+                                <h3>NFT drop app</h3>
+                                <a class="btn" href="https://nft-drop-black.vercel.app/"><i class="fa fa-eye " aria-hidden="true"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-3 wow fadeInUp" data-wow-delay="1s">
+                        <div class="portfolio-wrap">
+                            <div class="portfolio-img">
+                                <img src="img/8.png" alt="Image">
+                            </div>
+                            <div class="portfolio-text">
+                                <h3>Netflix app (NEXTJS)</h3>
+                                <a class="btn" href="https://netflix-v3.vercel.app/"><i class="fa fa-eye " aria-hidden="true"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio End -->
+        
+        
+        <!-- Banner Start -->
+         <div class="banner wow zoomIn" data-wow-delay="0.1s"> 
+            <div class="container">
+                <div class="section-header text-center">
+                    <p>Awesome Discount</p>
+                    <h2>Get <span>30%</span> Discount</h2>
+                </div>
+                <div class="container banner-text">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id gravida condimentum, viverra quis sem. Curabitur non nisl nec nisi scelerisque maximus. 
+                    </p>
+                    <a class="btn">Order Now</a>
+                </div>
+            </div>
+        </div>
+        <!-- Banner End -->
+        
+        
+        <!-- Price Start -->
+   <div class="price" id="price"> 
+            <div class="container">
+                <div class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
+                    <p>Pricing Plan</p>
+                    <h2>Affordable Price</h2>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="price-item">
+                            <div class="price-header">
+                                <div class="price-title">
+                                    <h2>Basic</h2>
+                                </div>
+                                <div class="price-prices">
+                                    <h2><small>$</small>49<span>/ mo</span></h2>
+                                </div>
+                            </div>
+                            <div class="price-body">
+                                <div class="price-description">
+                                    <ul>
+                                        <li>Bootstrap 4</li>
+                                        <li>Font Awesome 5</li>
+                                        <li>Responsive Design</li>
+                                        <li>Browser Compatibility</li>
+                                        <li>Easy To Use</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="price-footer">
+                                <div class="price-action">
+                                    <a class="btn" href="">Order Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 wow fadeInUp" data-wow-delay="0.0s">
+                        <div class="price-item featured-item">
+                            <div class="price-header">
+                                <div class="price-title">
+                                    <h2>Standard</h2>
+                                </div>
+                                <div class="price-prices">
+                                    <h2><small>$</small>99<span>/ mo</span></h2>
+                                </div>
+                            </div>
+                            <div class="price-body">
+                                <div class="price-description">
+                                    <ul>
+                                        <li>Bootstrap 4</li>
+                                        <li>Font Awesome 5</li>
+                                        <li>Responsive Design</li>
+                                        <li>Browser Compatibility</li>
+                                        <li>Easy To Use</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="price-footer">
+                                <div class="price-action">
+                                    <a class="btn" href="">Order Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="price-item">
+                            <div class="price-header">
+                                <div class="price-title">
+                                    <h2>Premium</h2>
+                                </div>
+                                <div class="price-prices">
+                                    <h2><small>$</small>149<span>/ mo</span></h2>
+                                </div>
+                            </div>
+                            <div class="price-body">
+                                <div class="price-description">
+                                    <ul>
+                                        <li>Bootstrap 4</li>
+                                        <li>Font Awesome 5</li>
+                                        <li>Responsive Design</li>
+                                        <li>Browser Compatibility</li>
+                                        <li>Easy To Use</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="price-footer">
+                                <div class="price-action">
+                                    <a class="btn" href="">Order Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> 
+        <!-- Price End -->
+        
+        
+        <!-- Testimonial Start -->
+         <div class="testimonial wow fadeInUp" data-wow-delay="0.1s" id="review"> 
+            <div class="container">
+                <div class="testimonial-icon">
+                    <i class="fa fa-quote-left"></i>
+                </div>
+                <div class="owl-carousel testimonials-carousel">
+                    <div class="testimonial-item">
+                        <div class="testimonial-img">
+                            <img src="data:image/jpeg;base64,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" alt="Image">
+                        </div>
+                        <div class="testimonial-text">
+                            <p>
+                                Any fool can write code that a computer can understand. Good programmers write code that humans can understand.
+                            </p>
+
+                        </div>
+                    </div>
+                    <div class="testimonial-item">
+                        <div class="testimonial-img">
+                            <img src="data:image/jpeg;base64,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" alt="Image">
+                        </div>
+                        <div class="testimonial-text">
+                            <p>
+                                First, solve the problem. Then, write the code.
+                            </p>
+
+                        </div>
+                    </div>
+                    <div class="testimonial-item">
+                        <div class="testimonial-img">
+                            <img src="data:image/jpeg;base64,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" alt="Image">
+                        </div>
+                        <div class="testimonial-text">
+                            <p>
+                                Knowledge is power.
+                            </p>
+
+                        </div>
+                    </div>
+                    
+                    </div>
+                </div>
+            </div>
+        </div> -->
+        <!-- Testimonial End -->
+
+
+        <!-- Team Start -->
+         <div class="team" id="team"> 
+            <div class="container">
+                <div class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
+                    <p>My Team</p>
+                    <h2>Expert Team Members</h2>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.0s">
+                        <div class="team-item">
+                            <div class="team-img">
+                                <img src="img/team-1.jpg" alt="Image">
+                            </div>
+                            <div class="team-text">
+                                <h2>Mollie Ross</h2>
+                                <h4>Web Designer</h4>
+                                <p>
+                                    Lorem ipsum dolor sit amet consec adipis elit. Etiam accum lacus
+                                </p>
+                                <div class="team-social">
+                                    <a class="btn" href=""><i class="fab fa-twitter"></i></a>
+                                    <a class="btn" href=""><i class="fab fa-facebook-f"></i></a>
+                                    <a class="btn" href=""><i class="fab fa-linkedin-in"></i></a>
+                                    <a class="btn" href=""><i class="fab fa-instagram"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.2s">
+                        <div class="team-item">
+                            <div class="team-img">
+                                <img src="img/team-2.jpg" alt="Image">
+                            </div>
+                            <div class="team-text">
+                                <h2>Dylan Adams</h2>
+                                <h4>Web Developer</h4>
+                                <p>
+                                    Lorem ipsum dolor sit amet consec adipis elit. Etiam accum lacus
+                                </p>
+                                <div class="team-social">
+                                    <a class="btn" href=""><i class="fab fa-twitter"></i></a>
+                                    <a class="btn" href=""><i class="fab fa-facebook-f"></i></a>
+                                    <a class="btn" href=""><i class="fab fa-linkedin-in"></i></a>
+                                    <a class="btn" href=""><i class="fab fa-instagram"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.4s">
+                        <div class="team-item">
+                            <div class="team-img">
+                                <img src="img/team-3.jpg" alt="Image">
+                            </div>
+                            <div class="team-text">
+                                <h2>Jennifer Page</h2>
+                                <h4>Apps Designer</h4>
+                                <p>
+                                    Lorem ipsum dolor sit amet consec adipis elit. Etiam accum lacus
+                                </p>
+                                <div class="team-social">
+                                    <a class="btn" href=""><i class="fab fa-twitter"></i></a>
+                                    <a class="btn" href=""><i class="fab fa-facebook-f"></i></a>
+                                    <a class="btn" href=""><i class="fab fa-linkedin-in"></i></a>
+                                    <a class="btn" href=""><i class="fab fa-instagram"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.6s">
+                        <div class="team-item">
+                            <div class="team-img">
+                                <img src="img/team-4.jpg" alt="Image">
+                            </div>
+                            <div class="team-text">
+                                <h2>Josh Dunn</h2>
+                                <h4>Apps Developer</h4>
+                                <p>
+                                    Lorem ipsum dolor sit amet consec adipis elit. Etiam accum lacus
+                                </p>
+                                <div class="team-social">
+                                    <a class="btn" href=""><i class="fab fa-twitter"></i></a>
+                                    <a class="btn" href=""><i class="fab fa-facebook-f"></i></a>
+                                    <a class="btn" href=""><i class="fab fa-linkedin-in"></i></a>
+                                    <a class="btn" href=""><i class="fab fa-instagram"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> 
+        <!-- Team End -->
+        
+        
+        <!-- Contact Start -->
+        <div class="contact wow fadeInUp" data-wow-delay="0.1s" id="contact">
+            <div class="container-fluid">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-md-4"></div>
+                        <div class="col-md-8">
+                            <div class="contact-form">
+                                <div id="success"></div>
+                                <form name="sentMessage" id="contactForm" novalidate="novalidate">
+                                    <div class="control-group">
+                                        <input type="text" class="form-control" id="name" placeholder="Your Name" required="required" data-validation-required-message="Please enter your name" />
+                                        <p class="help-block"></p>
+                                    </div>
+                                    <div class="control-group">
+                                        <input type="email" class="form-control" id="email" placeholder="Your Email" required="required" data-validation-required-message="Please enter your email" />
+                                        <p class="help-block"></p>
+                                    </div>
+                                    <div class="control-group">
+                                        <input type="text" class="form-control" id="subject" placeholder="Subject" required="required" data-validation-required-message="Please enter a subject" />
+                                        <p class="help-block"></p>
+                                    </div>
+                                    <div class="control-group">
+                                        <textarea class="form-control" id="message" placeholder="Message" required="required" data-validation-required-message="Please enter your message"></textarea>
+                                        <p class="help-block"></p>
+                                    </div>
+                                    <div>
+                                        <button class="btn" type="submit" id="sendMessageButton" onsubmit={submitForm(e)}>Send Message</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Contact End -->
+
+
+        <!-- Blog Start -->
+      <div class="blog" id="blog"> 
+            <div class="container">
+                <div class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
+                    <p>From Blog</p>
+                    <h2>Latest Articles</h2>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="blog-item wow fadeInUp" data-wow-delay="0.1s">
+                            <div class="blog-img">
+                                <img src="https://blogger.googleusercontent.com/img/a/AVvXsEjcqNdV-ha-pA6GJ0Gvnl5X-OFII47B453zFwDeNxk-tL1VV4aIWqYpi3WdAtKrhLB3YbjGc3455CzCrbsmAHM6jK_Pt-A9hSetYd8LrM6osqDs59pSZGvZALO4MCMzTVZf4hGSsJ2cD1QWXYO4L04IzrJKsLm0adk7eM9_QuJNwOBA58fR9CSlqXmo=w400-h267" alt="Blog">
+                            </div>
+                            <div class="blog-text">
+                                <h2>How to start Coding ?</h2>
+
+                                <p>
+                                    In case you haven’t noticed, the role of technology has changed quite a bit in the last 20 years or so. Slowly but surely, computers have permeated nearly every part of our lives, from what we buy, to how we get from place to place, to how we work, to where we eat after we clock out for the day.
+                                </p>
+                                <a class="btn" href="https://icodebetter.blogspot.com/2022/06/how-to-start-coding.html">Read More <i class="fa fa-angle-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="blog-item wow fadeInUp" data-wow-delay="0.3s">
+                            <div class="blog-img">
+                                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhEKjrYDRA7vZ15biJlsG8Zl_sdd0Qe5D9o6wrzinpecznaku_6GXJkvzh97N4_5HZzOQ0-GW7_M1W_8H5hB8Nk-7oafhroEOmocC4Wsd1lX0qwPLhxDXRhWPvYVai2Fvdi3AhuL-LKJ85l2OysDFOdya7lOUxNRLI40tfgyOCS_11WB1gcRGMnuUGa/w640-h352/computer-1873831_1920.png" alt="Blog">
+                            </div>
+                            <div class="blog-text">
+                                <h2>Java for beginers. How to learn java?</h2>
+                                
+                                <p>
+                                    Functions
+A function is a block of code which takes some input, performs some operations and returns some output. 
+
+The functions stored inside classes are called methods.
+
+The function we have used is called main.
+                                </p>
+                                <a class="btn" href="https://icodebetter.blogspot.com/2022/06/java-for-beginers-how-to-learn-java.html">Read More <i class="fa fa-angle-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Blog End -->
+
+
+        <!-- Footer Start -->
+        <div class="footer wow fadeIn" data-wow-delay="0.3s">
+            <div class="container-fluid">
+                <div class="container">
+                    <div class="footer-info">
+                        <h2>Manoj kumar</h2>
+                        <!-- <h3>123 Street, New York, USA</h3> -->
+                        <div class="footer-menu">
+                            <!-- <p>+012 345 67890</p> -->
+                            <p>ms8460149@gmail.com</p>
+                        </div>
+                        <div class="footer-social">
+                            <a href="https://twitter.com/iamsidar07"><i class="fab fa-twitter"></i></a>
+                            <a href="https://www.facebook.com/profile.php?id=100065024808971"><i class="fab fa-facebook-f"></i></a>
+                            <!-- <a href=""><i class="fab fa-youtube"></i></a> -->
+                            <a href="https://www.instagram.com/iamsidar07/"><i class="fab fa-instagram"></i></a>
+                            <!-- <a href=""><i class="fab fa-linkedin-in"></i></a> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="container copyright">
+                    <p>&copy; <a href="#">CodeBeast</a>, All Right Reserved | Designed By ⚠️Manoj Kumar</p>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->
+        
+        
+        <!-- Back to top button -->
+        <a href="#" class="btn back-to-top"><i class="fa fa-chevron-up"></i></a>
+        
+        
+        <!-- Pre Loader -->
+        <div id="loader" class="show">
+            <div class="loader"></div>
+        </div>
+
+        
+        <!-- JavaScript Libraries -->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+        <script src="lib/easing/easing.min.js"></script>
+        <script src="lib/wow/wow.min.js"></script>
+        <script src="lib/waypoints/waypoints.min.js"></script>
+        <script src="lib/typed/typed.min.js"></script>
+        <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+        <script src="lib/isotope/isotope.pkgd.min.js"></script>
+        <script src="lib/lightbox/js/lightbox.min.js"></script>
+        
+        <!-- Contact Javascript File -->
+        <script src="mail/jqBootstrapValidation.min.js"></script>
+        <script src="mail/contact.js"></script>
+
+        <!-- Template Javascript -->
+        <script src="js/main.js"></script>
+    </body>
+</html>
